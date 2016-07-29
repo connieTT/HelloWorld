@@ -1,0 +1,214 @@
+/*===============================================================*/
+/*GLOBAL STYLES -- These style apply to every page in the app*/
+/*===============================================================*/
+body{
+    /*font-family: arial, sans-serif;*/
+    /*font-family: 'Ubuntu Mono', ;*/
+}
+
+legend{
+    font-size: 1.5em;
+    font-family: 'Bangers', cursive;
+}
+
+form{
+    width: 20vw;
+    /*float: left;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+button{
+    width: 20vw;
+    border: solid gray 1px;
+    background: blue;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 15px;
+    font-family: 'Bangers', cursive;
+}
+
+button:hover{
+    background: black;
+}
+
+input{
+    width: 20vw;
+    background: lightgoldenrodyellow;
+    border: solid gray 1px;    
+}
+
+p{
+    width: 20vw;
+    margin-bottom: 7.5px;
+    font-family: 'Lucida Bright', Georgia, serif;
+}
+
+#pic{
+    /*float: left;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    height:40vw;
+    overflow: visible;
+    background-image: url(../img/balls.png);
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+}
+
+#question{
+    text-align: center;
+}
+
+/*=========================================================================*/
+/* SIGNIN/ SIGN UP STYLES -- These styles apply to signIn.php and signUp.php*/
+/*=========================================================================*/
+button:nth-of-type(2){
+    margin-top: 0;
+}
+
+#message{
+    color: blue;
+    text-align: center;
+}
+
+
+
+/*=========================================================================*/
+/* MEMBERPAGE STYLES -- These styles apply to memberPage.php*/
+/*=========================================================================*/
+#headerRow{
+    margin-bottom: 5vh;
+}
+
+#personIcon{
+    width:4vw;
+    position: relative;
+    transform: translateY(1em);
+    margin-right: 1vw;
+}
+
+#userName{
+    font-size: 2em;
+    font-weight: bold;
+   
+}
+
+#salesForm{
+    width: 40vw;
+}
+
+#salesForm input{
+    background: none;
+}
+
+.sublegend{
+    font-size: 1em;
+    font-family: 'Lucida Bright', Georgia, serif;
+
+}
+
+.number{
+    width: 100px;
+}
+
+.cispan{ /* Customer Information field tags */
+    display: inline-block;
+    width:10vw;
+    background: steelblue;
+    font-family: 'Lucida Bright', Georgia, serif;
+
+}
+
+.cospan{ /* Cookie Order field tags */
+    display: inline-block;
+    width:10vw;
+    background: steelblue;
+    font-family: 'Lucida Bright', Georgia, serif;
+
+}
+
+/* Cookie types background colors */
+table tr:nth-of-type(2){ background: red; }
+table tr:nth-of-type(3){ background: deepskyblue; }
+table tr:nth-of-type(4){ background: gold; }
+table tr:nth-of-type(5){ background: mediumpurple; }
+table tr:nth-of-type(6){ background: darkolivegreen; }
+table tr:nth-of-type(7){ background: pink; }
+table tr:nth-of-type(8){ background: mediumseagreen; }
+table tr:nth-of-type(9){ background: gray;}
+
+td{/* Spread cookie order table sells out a bit */
+    padding: 10px;
+}
+
+.unitTotal, #total{/* Align dollar amount right */
+    text-align: right;
+}
+
+.unitTotal:before{/* Place a dollar symbol in front of unit totals */
+    content: "P$";
+}
+
+/* Removes the "spinner" arrows in the number field */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+#numofballs, .item{/* Align # of boxes center */
+    text-align: center;
+}
+
+#submitButton{/* Center submit button */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+rect.poke{ fill: red; }
+rect.great{ fill: deepskyblue; }
+rect.ultra{ fill: gold;}
+rect.master{ fill: mediumpurple; }
+rect.level{ fill: darkolivegreen; }
+rect.premier{ fill: pink; }
+rect.timer{ fill: mediumseagreen; }
+
+.axis{
+    font-weight: bold;
+}
+
+.axis line{
+    stroke: gray;
+}
+
+.legend{
+    font-size: 12px;
+}
+
+/*#chartSalesPercentages{*/
+/*    width: 750;*/
+/*    height: 200;*/
+/*    position: relative;*/
+/*}*/
+
+.tooltip {
+  background: #eee;
+  box-shadow: 0 0 5px #999999;
+  color: #333;
+  display: none;
+  font-size: 12px;
+  left: 0px;
+  /*padding: 10px;*/
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: 80px;
+  z-index: 10;
+}

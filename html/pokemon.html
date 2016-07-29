@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pokemon Battle!</title>
+        <link rel="stylesheet" href="../css/pokemonStyles.css" type="text/css" />
+        <script type="text/javascript" src="../js/pokemon.js"></script>
+    </head>
+    <body onload="startUp();">
+        <div class="text" id="text"></div>
+        <div class="tile" id="tile0"><div>&nbsp;</div></div>
+        <div class="tile" id="tile1"></div>
+        <div class="tile" id="tile2"></div>
+        <div class="tile" id="tile3"></div>
+        <input class="button" id="goButton" type="image" src="../img/pokemon/start.png" onclick="doBattle();"/>        
+        <input class="button" id="autoButton" type="image" src="../img/pokemon/auto.png" onclick="autoBattle();"/>        
+        <input class="button" id="stopButton" type="image" src="../img/pokemon/stop.png" onclick="stopBattle();"/>        
+    </body>
+</html>
